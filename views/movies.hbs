@@ -1,1 +1,21 @@
-{{allMovies}}
+<h2>Cinema Ironhack</h2>
+
+<ul>
+  <div class="theList">
+    {{#each allMovies}}
+    <li id="images">
+      <img src="{{ this.image }}" alt="images" />
+
+      <br />
+
+      <div id="title">
+        {{ this.title }}
+      </div>
+
+      <br />
+
+      <a class="theList" href="/seemore/{{this.id}}"> See More</a>
+    </li>
+    {{/each}}
+  </div>
+</ul>
